@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Navigation from '../navigation/Navigation';
 
 import * as api from '../../helpers/api';
+import { Card, Button } from 'react-bootstrap';
 
 
 
@@ -30,9 +31,22 @@ class UserProfile extends Component {
         return (
         <div>
             <Navigation />
+            <div className="center">
+                <h3>{this.state.user.username}</h3>
+                <p>Created at: {this.state.user.created_at}</p>
+                <p>Karma: {this.state.user.id}</p>
+                <Button>Update Userename</Button>
+            </div>
             
-
+            <div>
+                <Button>Contribucions</Button>
+                <Button>Comments</Button>
+                <Button>Liked Contribucios</Button>
+                <Button>Liked Comments</Button>
+            </div>
         </div>
+            
+            
         );
     }
 }

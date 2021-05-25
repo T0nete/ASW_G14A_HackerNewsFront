@@ -19,8 +19,7 @@ class AskStories extends Component {
       .then((response) => {
         const contribucios = response.data;
         this.setState({ contribucios });
-        console.log(contribucios);
-    });
+      });
   }
 
 
