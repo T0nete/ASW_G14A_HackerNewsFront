@@ -5,7 +5,12 @@ import AskStories from './components/askStories/AskStories';
 import NewStories from './components/newStories/NewStories';
 import BestStories from './components/bestStories/BestStories';
 import StoryComment from './components/storyComment/StoryComment';
-import UserProfile from './components/userProfile/UserProfile'
+import UserProfile from './components/userProfile/UserProfile';
+
+import UserContribucios from './components/userContribucios/UserContribucios';
+import UserComments from './components/userComments/UserComments';
+import LikedContribucios from './components/likedContribucios/LikedContribucios';
+import LikedComments from './components/likedComments/LikedComments';
 
 
   const Routes = (props) => (
@@ -24,7 +29,12 @@ import UserProfile from './components/userProfile/UserProfile'
   
       <Route path="/comments/(:id)" component={Comment} />
       <Route path="/comments/(:id)/reply_comment" component={TopStories} />
-  
+
+      <Route path="/usercontribucios" component={UserContribucios}></Route>
+      <Route path="/comments" component={UserComments}></Route>
+      <Route path="/contribucioslikedid" component={LikedContribucios}></Route>
+      <Route path="/commentsliked" component={LikedComments}></Route>
+
   
     </Router>
   );

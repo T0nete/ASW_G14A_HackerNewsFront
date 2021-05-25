@@ -39,10 +39,10 @@ class UserProfile extends Component {
             </div>
             
             <div>
-                <Button>Contribucions</Button>
-                <Button>Comments</Button>
-                <Button>Liked Contribucios</Button>
-                <Button>Liked Comments</Button>
+                <Button href="/usercontribucios">Contribucions</Button>
+                <Button href="/comments">Comments</Button>
+                <Button href="/contribucioslikedid">Liked Contribucios</Button>
+                <Button href="/commentsliked">Liked Comments</Button>
             </div>
         </div>
             
