@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Navigation from '../navigation/Navigation';
 import Story from '../story/Story';
-import './NewStories.css';
 
 import * as api from '../../helpers/api';
 
@@ -77,4 +76,4 @@ AskStories.propTypes = {
   liked_contribucios: React.PropTypes.array
 };
 
-export default NewStories;
+export default AskStories;

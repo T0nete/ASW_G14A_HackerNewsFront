@@ -44,6 +44,11 @@ export function getLikedContribucios() {
 }
 
 
+export function getUserId() {
+  return axios.get('https://hacker-news-g14a.herokuapp.com/users/1.json');
+}
+
+
 /*
 export function getNewStories() {
   return axios.get('https://hacker-news.firebaseio.com/v0/newstories.json?print=pretty');

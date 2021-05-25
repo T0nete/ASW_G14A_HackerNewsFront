@@ -20,11 +20,11 @@ const Navigation = () => (
           <LinkContainer to="/news">
             <NavItem eventKey={2}>New</NavItem>
           </LinkContainer>
-          <LinkContainer to="/ask">
+          <LinkContainer to="/asks">
             <NavItem eventKey={3}>Ask</NavItem>
           </LinkContainer>
-          <LinkContainer to="/jobs">
-            <NavItem eventKey={4}>Jobs</NavItem>
+          <LinkContainer to="/users/1">
+            <NavItem eventKey={4}>Profile</NavItem>
           </LinkContainer>
         </Nav>
       </Navbar.Collapse>
