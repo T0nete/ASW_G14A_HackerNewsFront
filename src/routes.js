@@ -6,6 +6,7 @@ import NewStories from './components/newStories/NewStories';
 import BestStories from './components/bestStories/BestStories';
 import StoryComment from './components/storyComment/StoryComment';
 import UserProfile from './components/userProfile/UserProfile';
+import NewContribucio from './components/newContribucio/NewContribucio';
 
 import UserContribucios from './components/userContribucios/UserContribucios';
 import UserComments from './components/userComments/UserComments';
@@ -17,6 +18,7 @@ import LikedComments from './components/likedComments/LikedComments';
     <Router {...props}>
       <Route path="/" component={TopStories} />
       <Route path="/contribucios" component={TopStories} />
+      <Route path="/contribucios/new" component={NewContribucio} />
       <Route path="/news" component={NewStories} />
       <Route path="/contribucios/news" component={NewStories} />
       <Route path="/best" component={BestStories} />

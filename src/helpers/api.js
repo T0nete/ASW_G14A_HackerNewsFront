@@ -1,5 +1,7 @@
 import axios from 'axios';
 
+const token = '1';
+
 export function getTopStories() {
   return axios.get('https://hacker-news.firebaseio.com/v0/topstories.json?print=pretty');
 }
@@ -53,12 +55,24 @@ export function getUserContribucios() {
 }
 
 export function getUserComments() {
-  return axios.get('https://hacker-news-g14a.herokuapp.com/comments.json');
+  return axios.get('https://hacker-news-g14a.herokuapp.com/comments?userid=1.json'), {
+    headers: {
+      'Authorization': '1'
+    }
+  };
 }
 
 export function getrUserLikedComments() {
-  return axios.get('https://hacker-news-g14a.herokuapp.com/comments?commentedid=1.json');
+  
+  return axios.get('https://hacker-news-g14a.herokuapp.com/comments?commentedid=1.json'), {
+    headers: {
+      'Authorization': '{token}'
+    }
+  };
+  
 }
+
+
 
 
 

@@ -26,6 +26,9 @@ const Navigation = () => (
           <LinkContainer to="/users/1">
             <NavItem eventKey={4}>Profile</NavItem>
           </LinkContainer>
+          <LinkContainer to="/contribucios/new">
+            <NavItem eventKey={5}>New Contribucio</NavItem>
+          </LinkContainer>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

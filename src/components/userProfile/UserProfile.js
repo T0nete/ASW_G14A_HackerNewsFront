@@ -45,8 +45,6 @@ class UserProfile extends Component {
                 <Button href="/commentsliked">Liked Comments</Button>
             </div>
         </div>
-            
-            
         );
     }
 }
